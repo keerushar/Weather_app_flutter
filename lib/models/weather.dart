@@ -49,7 +49,7 @@ Future<List> fetchData(String lat, String lon, String city) async {
       pressure: current["pressure"].toDouble(),
       tempnow: current["temp"].toDouble(),
       desc: current["weather"][0]["main"].toString(),
-      day: DateFormat("EEEE dd MMMM").format(date),
+      day: DateFormat("EEE dd, MMM").format(date),
       wind: current["wind_speed"].toDouble(),
       humidity: current["humidity"].toDouble(),
       chanceRain: current["uvi"].toDouble(),
